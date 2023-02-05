@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: "Stormin' the Castle Blog ",
+  title: "Stormin' the Castle ",
   author: 'John Robinson',
-  headerTitle: "Stormin' the Castle Blog",
+  headerTitle: "Stormin' the Castle",
   description: 'A blog exploring AI/ML and Software Development',
   language: 'en-us',
   theme: 'system', // system, dark or light
