@@ -55,10 +55,9 @@ const securityHeaders = [
 const isProd = process.env.NODE_ENV === 'production'
 module.exports = withBundleAnalyzer({
   images: {
-    loader: 'akamai',
-    path: '/',
+    unoptimized: isProd ? true : false,
   },
-  assetPrefix: isProd ? 'https://pinkdragon1000.github.io/StorminTheCastle/' : '',
+  assetPrefix: isProd ? 'https://pinkdragon1000.github.io/StorminTheCastle2/' : '',
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   eslint: {
