@@ -53,7 +53,9 @@ const securityHeaders = [
 ]
 
 const isProd = process.env.NODE_ENV === 'production'
+console.log('isProd', isProd)
 module.exports = withBundleAnalyzer({
+  trailingSlash: true,
   images: {
     loader: 'akamai',
     path: '/',
