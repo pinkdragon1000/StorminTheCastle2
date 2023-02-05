@@ -15,9 +15,10 @@ This is a quick overview of my experiments using an Image Regression Model to gu
 In these experiments, I have not done any fine-tuning of the Stable Diffusion model. Rather I'm using my own image regression model (trained on a head pose dataset) to guide Stable Diffusion's image generation at inference time, operating in latent space rather than image space.
 
 ![photo of a woman](/static/images/posingHeads/sample1.jpeg)
+
 Prompt: 'Photo of a woman'
 
-This is built on top of a technique outlined in Jonathon Whitaker's ground-breaking article, Mid-U Guidance: Fast Classifier Guidance for Latent Diffusion Models. In this article, He describes a new technique for efficiently using an image classifier model to guide Stable Diffusion inference.
+This is built on top of a technique outlined in [Jonathon Whitaker's](https://twitter.com/johnowhitaker) ground-breaking article, [Mid-U Guidance: Fast Classifier Guidance for Latent Diffusion Models](https://wandb.ai/johnowhitaker/midu-guidance/reports/Mid-U-Guidance-Fast-Classifier-Guidance-for-Latent-Diffusion-Models--VmlldzozMjg0NzA1). In this article, He describes a **new technique** for efficiently using an image classifier model to guide Stable Diffusion inference.
 
 Latent diffusion models such as Stable Diffusion make it difficult to use image models for classifier guidance, since they operate internally on a highly compressed image represention (latents). Trying to use a classifier that operates in image space to steer the image generation process, would require tracing gradients not only through the classifier model, but also back through the decoder for the VAE and the upsampling path of Stable Diffusion's UNet making it very memory and compute intensive.
 
@@ -61,14 +62,10 @@ Prompt: “photo of a man”
 
 ### Afterword
 
-This is a very rich space to explore and I have a ton of other related research ideas.
-
-Three months ago I knew nothing about Stable Diffusion. [Jeremy Howards's](https://twitter.com/jeremyphoward) latest course, ["From Deep Learning Foundations to Stable Diffusion"](https://www.fast.ai/posts/part2-2022.html) gave me not only an intuition about how this technology works but also imparted a strong foundational knowledge of its inner workings. I highly recommend it.
-
-During his course, Jeremy started cranking out piece-by-piece a new "experimental" machine learning library called miniai. I used miniai to train the model that I described in this article. It's super flexible and its modest size make it a great platform for experimentation.
+This is a very rich space to explore and I have a ton of other related research ideas. I used miniai, a new "experimental" machine larning framework from [@jeremyphoward](https://twitter.com/jeremyphoward) to train the model that I described in this article. It's super flexible and its modest size make it a great platform for experimentation.
 
 #### References
 
 [1] [Mid-U Guidance: Fast Classifier Guidance for Latent Diffusion Models](https://wandb.ai/johnowhitaker/midu-guidance/reports/Mid-U-Guidance-Fast-Classifier-Guidance-for-Latent-Diffusion-Models--VmlldzozMjg0NzA1) by Jonathon Whitaker 2023
 
-For all commercial inquiries, please contact [sales@liquidthought.com](mailto: sales@liquidthought.com)
+For all commercial inquiries, please contact [sales@liquidthought.com](mailto:sales@liquidthought.com)

@@ -87,7 +87,7 @@ img = Image.open(path/f'train/{img_file}')
 img
 ```
 
-![png](https://www.storminthecastle.com/img/01_classification_files/01_classification_14_0.png)
+![png](/static/images/01_classification_files/01_classification_14_0.png)
 
 ```python
 h,w = img.shape
@@ -108,7 +108,7 @@ img_scaled = img.resize((SIZE,SIZE))
 img_scaled
 ```
 
-![png](https://www.storminthecastle.com/img/01_classification_files/01_classification_18_0.png)
+![png](/static/images/01_classification_files/01_classification_18_0.png)
 
 Given the task of object detection our independent variable are the images and the dependent variables are the object classes and the object bounding boxes. Given an image, we will want our model to predict a class label for each object in the image along with a bounding box for each object. One wrinkle however is that our bounding box (dependent variable) is defined in the coordinate space of our image (independent variable). So if we scale the input image we must also be careful to scale the bounding boxes along with it. Since the image has been squished to be of size 224x224 pixels we need to squish (scale) the dimensions our bounding boxes for that sample by the same amount. Here I show the steps required to squish the dimensions of the bounding boxes for our sample.
 
@@ -156,7 +156,7 @@ show_img(img_scaled)
 
 `<AxesSubplot: > `
 
-![png](https://www.storminthecastle.com/img/01_classification_files/01_classification_25_1.png)
+![png](/static/images/01_classification_files/01_classification_25_1.png)
 
 We will want to be able to overlay the class labels on top of our image in the appropriate locations along with the bounding boxes for each object. Here are a couple of utility functions that allow us to draw text on top of an image and allow us to draw a rectangle on top of an image.
 
@@ -207,7 +207,7 @@ Let's draw our scaled image along with it's scaled bounding boxes and class labe
 show_item(img_scaled,img_bbox_scaled)
 ```
 
-![png](https://www.storminthecastle.com/img/01_classification_files/01_classification_32_0.png)
+![png](/static/images/01_classification_files/01_classification_32_0.png)
 
 By now you should have a pretty good understanding of what the dataset looks like. Our goal for this series of articles will be to use this dataset to develop and train an object detection model that can take an image as input and will output a list of class labels for each object within the image along with their respective bounding boxes. But we will do this incrementally in order to build up an intuition of how the system will work.
 
@@ -322,7 +322,7 @@ _Note: Image augmentations specified above will be randomly applied._
 dls.show_batch()
 ```
 
-![png](https://www.storminthecastle.com/img/01_classification_files/01_classification_57_0.png)
+![png](/static/images/01_classification_files/01_classification_57_0.png)
 
 We can now use the vision_learner API and specify our dataset, the model architecture that we'd like to use, and any training metrics that we'd like to see while training.
 
