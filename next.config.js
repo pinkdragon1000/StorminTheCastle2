@@ -58,9 +58,10 @@ module.exports = withBundleAnalyzer({
   trailingSlash: true,
   images: {
     loader: 'akamai',
-    path: '/',
+    path: '',
   },
   assetPrefix: isProd ? 'https://pinkdragon1000.github.io/StorminTheCastle2/' : '',
+  basePath: isProd ? '/StorminTheCastle2' : '',
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   eslint: {
