@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Stormin&#39; the Castle Blog </title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog exploring AI/ML and Software Development</description>
+      <language>en-us</language>
+      <managingEditor>johnrobinsn@gmail.com (John Robinson)</managingEditor>
+      <webMaster>johnrobinsn@gmail.com (John Robinson)</webMaster>
+      <lastBuildDate>Sun, 29 Jan 2023 15:32:14 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/diffusion/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/posing-heads-with-stable-diffusion</guid>
+    <title>Posing Heads with Stable Diffusion</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/posing-heads-with-stable-diffusion</link>
+    undefined
+    <pubDate>Sun, 29 Jan 2023 15:32:14 GMT</pubDate>
+    <author>johnrobinsn@gmail.com (John Robinson)</author>
+    <category>Diffusion</category><category>MID-U</category><category>miniai</category>
+  </item>
+
+    </channel>
+  </rss>
