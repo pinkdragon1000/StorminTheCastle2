@@ -1,7 +1,7 @@
 
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-      <title>Stormin&#39; the Castle Blog </title>
+      <title>Stormin&#39; the Castle </title>
       <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
       <description>A blog exploring AI/ML and Software Development</description>
       <language>en-us</language>
