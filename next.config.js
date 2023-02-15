@@ -59,7 +59,7 @@ module.exports = withBundleAnalyzer({
     loader: 'akamai',
     path: '',
   },
-  assetPrefix: isProd ? 'https://pinkdragon1000.github.io/StorminTheCastle2/' : '/',
+  assetPrefix: isProd ? 'https://pinkdragon1000.github.io/StorminTheCastle2' : '',
   basePath: isProd ? '/StorminTheCastle2' : '',
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],

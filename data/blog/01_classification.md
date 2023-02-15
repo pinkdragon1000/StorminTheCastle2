@@ -6,7 +6,7 @@ tags: ['object detection', 'code']
 draft: false
 ---
 
-<img src="https://www.storminthecastle.com/img/01_classification_files/computervision1_256.jpeg"/><br/>
+<img src="/static/images/01_classification_files/computervision1_256.jpeg"/><br/>
 
 [<img src="https://www.storminthecastle.com/img/github.svg"/>](https://github.com/johnrobinsn/ObjectDetectionNotebooks/blob/main/nbs/01_classification.ipynb) [<img src="https://www.storminthecastle.com/img/colab.svg"/>](https://colab.research.google.com/github/johnrobinsn/ObjectDetectionNotebooks/blob/main/nbs/01_classification.ipynb)
 
